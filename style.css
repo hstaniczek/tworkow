@@ -1,7 +1,5 @@
-#ala 
-	{
-	color: red;
+body {
+	margin:15%; 
+	background-color: #EAADF3;
+	border: 3px solid green;
 	}
-A:link {color:black;} 
-A:visited {color:green;} 
-A:hover {color:red; text-decoration:underline;} 
