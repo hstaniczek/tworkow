@@ -4,3 +4,19 @@ body {
 	border: 3px solid green;
 	padding: 45px;
 	}
+
+    a {
+            font-weight: bold;
+        }
+            a:link {
+                color: white;
+            }
+            a:visited {
+                color: white;
+            }
+            a:hover {
+                color: black;
+            }
+            a:active {
+                color: hotpink;
+            }
