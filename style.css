@@ -1,9 +1,14 @@
+
+
 body {
 	margin:15%; 
 	background-color: #EAADF3;
 	border: 3px solid hotpink;
 	padding: 45px;
 	}
+h1 {
+	text-shadow: 7px 7px 8px rgba(201, 117, 222, 1);
+}
 
     a {
             font-weight: bold;
