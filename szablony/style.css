@@ -1,0 +1,41 @@
+body
+{
+margin: 0;
+padding: 0;
+}
+
+#container
+{
+width: 750px;
+margin-left: auto;
+margin-right: auto;
+border:1px solid black;
+}
+
+#header
+{
+height: 150px;
+background: #9CF;
+}
+
+#left
+{
+width: 170px;
+float: left;
+background: #bfbfbf;
+}
+
+
+#right
+{
+width: 580px;
+float: left;
+background: #f5ff99;
+}
+
+#footer
+{
+clear: both;
+background: #b1ff96;
+}
+
