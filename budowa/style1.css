@@ -18,3 +18,19 @@ p
 {
   text-align:center;
 }
+
+a:link {
+  color: #e092de;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #000000;
+}
+
+a:active {
+  color: #db00d4;
+}
