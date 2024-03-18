@@ -14,7 +14,8 @@ h1
 {
   text-shadow: 6px 5px 10px rgba(239, 56, 255, 1);
 }
-#container
+
+container
 {
 width: 900px;
 margin-left: auto;
