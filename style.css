@@ -4,38 +4,7 @@ margin: 10%;
 padding: 10%;
 }
 
-#container
 {
-width: 900px;
-margin-left: auto;
-margin-right: auto;
-border:1px solid black;
+background-color: rgba(202, 89, 252, 1);
+background-image: linear-gradient(12deg, rgba(202, 89, 252, 1) 7%, rgba(41, 53, 86, 1) 100%);
 }
-
-#header
-{
-height: 150px;
-background: #9CF;
-}
-
-#left
-{
-width: 170px;
-float: left;
-background: #bfbfbf;
-}
-
-
-#right
-{
-width: 580px;
-float: left;
-background: #f5ff99;
-}
-
-#footer
-{
-clear: both;
-background: #b1ff96;
-}
-
