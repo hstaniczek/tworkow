@@ -35,5 +35,5 @@ a:active {
 
 @keyframes spin {
   0% {transform: rotate(0deg); }
-  50% {transform: rotate(360deg); }
+  150% {transform: rotate(90deg); }
 }
