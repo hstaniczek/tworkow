@@ -1,0 +1,39 @@
+body
+{
+margin: 3%;
+padding: 7%;
+background-color: rgba(191, 82, 255, 1);
+background-image: linear-gradient(65deg, rgba(191, 82, 255, 1) 4%, rgba(41, 53, 86, 1) 100%);
+background-repeat: no-repeat; height: 100vh;
+}
+
+h1
+{
+  text-shadow: 6px 5px 10px rgba(239, 56, 255, 1);
+}
+
+a:link {
+  color: #e092de;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #000000;
+}
+
+a:active {
+  color: #db00d4;
+}
+
+#logo 
+{
+  animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {transform: rotate(0deg); }
+  150% {transform: rotate(90deg); }
+}
