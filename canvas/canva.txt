@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Multimedia i interfejsy - HTML5 </title>
+ <script type = "text/javascript">
+function setup() {
+var canvas = document.getElementById('myCanvas');
+if (canvas.getContext) { //jeśli przeglądarka wspiera canvas
+var ctx = canvas.getContext('2d'); //zmienna określająca kontekst graficzny
+//…tu można rysować…
+}
+}
+ </script>
+</head>
+<body onload = "setup();">
+<canvas id = "myCanvas" width = "200" height = "200"></canvas>
+//atrybut id będzie wykorzystany do odwołania się do danego element w skrypcie
+</body>
+</html>

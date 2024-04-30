@@ -1,0 +1,29 @@
+
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Hania Staniczek">
+<meta name="description" content="szkola, lekcje">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title> canvas </title
+
+<body>
+<h1> canvas </h1>
+<img id="paint" src="https://image.freepik.com/free-vector/colorful-abstract-leaves-pattern_23-2149038885.jpg"  width="220" height="277">
+
+
+<canvas id="myCanvas"></canvas>
+<p><button onclick="myCanvas()">Nacisnij żeby pokolorowac</button></p>
+
+<script>
+function myCanvas() {
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("paint");
+  ctx.drawImage(img,0,0);
+}
+</script>
+
+</body>
+</html>
