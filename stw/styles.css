@@ -1,102 +1,150 @@
 :root {
-    --pink: #f5e558;
-    --dark: #29882d;
+  --pink: #f5e558;
+  --dark: #5be062;
 }
 
-*{
-    margin : 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    font-family: "Montserrat", sans-serif;
-    justify-content: center;
-    align-items: center;
-    background: var(--pink);
-    background: linear-gradient(45deg, var(--dark), var(--pink)) ;
-    overflow: hidden;
-    color: #ffff;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  align-items: center;
+  background: var(--pink);
+  background: linear-gradient(45deg, var(--dark), var(--pink));
+  overflow: hidden;
+  color: #ffff;
 }
 
 .container {
-    width: 66%;
-    height: 66%;
-    background: rgba(0, 0, 0, 0.75);
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
-    border-radius: 20px;
-    padding: 32px 92px;
-    position: relative;
-    backdrop-filter: blur(8px);
+  width: 66%;
+  height: 66%;
+  background: rgba(0, 0, 0, 0.75);
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.25)
+  );
+  border-radius: 20px;
+  padding: 32px 92px;
+  position: relative;
+  backdrop-filter: blur(8px);
 }
 
 .bg__img {
-    position: absolute;
+  position: absolute;
 }
 
-.bg__img--button{
-    position: absolute;
-    top: 0;
-    right: 60%;
-    height: 30vh;
-    animation: slideDown 10s linear infinite;
+.bg__img--button {
+  position: absolute;
+  top: 0;
+  right: 60%;
+  height: 30vh;
+  animation: slideDown 10s linear infinite;
 }
 
 .bg__img--dots {
-    top: 0;
-    left: 75%;
-    height: 75vh;
-    animation: rotate 20s linear infinite;
+  top: 0;
+  left: 75%;
+  height: 75vh;
+  animation: rotate 20s linear infinite;
 }
 
 .bg__img--logo {
-    width: 30vw;
-    height: 20vh;
-    left: 0;
-    top: 50%;
-    opacity: 0.65;
-    transform: translate(-10%, -50%);
-    rotate: -55deg
+  width: 30vw;
+  height: 20vh;
+  left: 0;
+  top: 50%;
+  opacity: 0.65;
+  transform: translate(-10%, -50%);
+  rotate: -55deg;
 }
 
 h1 {
-    padding-bottom: 12px;
-    font-size: 48px;
+  padding-bottom: 12px;
+  font-size: 48px;
+  margin-top: 20px;
 }
 
 p {
-    font-size: 20px;
-    font-weight: 400;
+  font-size: 20px;
+  font-weight: 400;
 }
 
-a{
-    color: var(--dark);
-    text-decoration: none;
-    position: relative
+a {
+  color: var(--dark);
+  text-decoration: none;
+  position: relative;
 }
 
 .link_border {
-    width: 100%;
-    height: 3px;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: var(--dark);
-
-
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 10 0%;
+  left: 0;
+  background: var(--dark);
 }
 
-
 @keyframes slideDown {
-    from {transform: translateY(-30vh)}
-    to {transform: translateY(100vh)}
+  from {
+    transform: translateY(-30vh);
+  }
+  to {
+    transform: translateY(100vh);
+  }
 }
 
 @keyframes rotate {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
+button {
+  width: 400px;
+  margin-top: 50px;
+  padding: 16px 0;
+  font-size: 39px;
+  font-weight: 700;
+  color: #fff;
+  background: var(--dark);
+  background: linear-gradient(
+    to right top,
+    var(--dark),
+    rgba(255, 255, 255, 0.6)
+  );
+  border-color: rgba(255, 255, 255, 0.329);
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+button:focus {
+  outline-color: #fff;
+}
+
+button:after {
+  width: 50px;
+  height: 150%;
+  position: absolute;
+  left: -100px;
+  top: -25px;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: rotate(20deg);
+  transition: transform 0.4s;
+}
+
+button:hover:after {
+  transform: translateX(500px) rotate(20deg);
+}
