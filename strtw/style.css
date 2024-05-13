@@ -361,3 +361,39 @@ li {
 .guzik:focus::after {
   opacity: 1;
 }
+
+footer {
+  background-color: rgb(41, 53, 110);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 230px;
+}
+
+.column {
+  display: inline-block;
+  width: 50%;
+}
+
+.column:hover {
+  color: white;
+}
+
+#imie {
+  color: grey;
+}
+#zrodla {
+  color: white;
+  font-size: 25px;
+}
+
+#zrd {
+  color: white;
+}
+
+#zrd:hover {
+  color: white;
+}
+#zrd:active {
+  color: white;
+}
